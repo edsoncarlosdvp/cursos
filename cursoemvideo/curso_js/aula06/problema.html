@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sua questão de vida</title>
+
+    <style>
+    
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: Normal 20px Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        
+        var decisao = window.prompt("Você pode! Vai resolver o problema? "); 
+        
+        if(decisao == 'sim'){
+            document.write(`PARABÉNS! VOCÊ ESCOLHEU VIVER BEM!`);
+        }else
+            if(decisao == 'não'){
+                for(tempo=0; tempo<=25; tempo++){
+                document.write(`VOCÊ ESCOLHEU, CONTINUAR SOFRENDO.<br>`);
+                }
+            }else{
+                document.write(`SEM DESCULPAS! SOLUCIONE O PROBLEMA DA SUA VIDA!<br>`);
+            }
+        
+    </script>
+
+</body>
+</html>

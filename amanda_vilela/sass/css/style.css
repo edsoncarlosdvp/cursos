@@ -1,0 +1,35 @@
+body {
+  background-color: #000000;
+}
+
+a {
+  color: red;
+}
+
+p {
+  margin: 20px 0;
+}
+
+nav {
+  width: 100%;
+  background-color: #a50a50;
+}
+nav ul {
+  list-style: none;
+  padding: 20px 0;
+}
+nav li {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav li a {
+  color: black;
+}
+nav li a:hover {
+  color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

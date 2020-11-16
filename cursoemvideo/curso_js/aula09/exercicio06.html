@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro programa...</title>
+
+    <style>
+    
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: Normal 18px Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clique em mim</div>
+    
+    <script>
+        /*var p1 = window.document.getElementsByTagName('p')[1];
+        window.document.write("Está escrito assim: " + p1.innerText);*/
+        
+        /*var d = document.getElementById('msg');
+        d.innerText = 'TXT';
+        d.style.backgroundColor = 'pink';
+        d.style.color = 'green';*/
+
+        var ds = document.querySelector('div#msg');
+        ds.innerText = 'Texto novo';
+        ds.style.backgroundColor = 'green';
+        ds.style.fontSize = '20px'
+    </script>
+
+</body>
+</html>

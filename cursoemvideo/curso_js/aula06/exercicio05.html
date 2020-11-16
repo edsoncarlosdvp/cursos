@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro programa...</title>
+
+    <style>
+    
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: Normal 20px Arial;
+        }
+
+        h1{
+            color: rgb(255, 215, 22)
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Digite o primeiro número");
+        document.write(`Olá, <strong>${nome}</strong>! O seu nome tem ${nome.length} letras.<br>`);
+        document.write(`Seu nome em maiúsculo fica assim: ${nome.toUpperCase()}<br>`);
+        document.write(`Seu nome em minúsculo fica assim: ${nome.toLowerCase()}<br>`);
+
+        //n1.toFixed(2) => Faz a formatação numérica com quantas casas decimais desejar
+        //n1.toFixed(2).replace('.', ',') => Faz a troca do ponto para a vírgula
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) => Formata o número para a moeda do país
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+    </script>
+
+</body>
+</html>
