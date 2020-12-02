@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Primeiro Gráfico</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses'],
+        ['2004', 1000, 320],
+        ['2005', 1170, 320],
+        ['2006', 660, 320],
+        ['2007', 1030, 540]
+      ]);
+
+      var options = {
+        title: 'Imobile Online',
+        curveType: 'function',
+
+        legend: {
+          position: 'top'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+  <div id="curve_chart" style="height: fit-content"></div>
+
+</body>
+
+</html>
