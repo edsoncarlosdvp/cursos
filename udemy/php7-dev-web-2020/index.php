@@ -21,7 +21,7 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo">
+                <div class="modulo verde">
 
                     <h3>Módulo 01</h3>
 
@@ -39,7 +39,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo vermelho">
 
                     <h3>Módulo 02</h3>
 
@@ -57,7 +57,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo azul">
 
                     <h3>Módulo 03</h3>
 
@@ -75,7 +75,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo roxo">
 
                     <h3>Módulo 04</h3>
 
@@ -93,7 +93,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo laranja">
 
                     <h3>Módulo 05</h3>
 
@@ -111,7 +111,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo verde-escuro">
 
                     <h3>Módulo 06</h3>
 
@@ -129,7 +129,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo vermelho-escuro">
 
                     <h3>Módulo 07</h3>
 
@@ -147,7 +147,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo azul-escuro">
 
                     <h3>Módulo 08</h3>
 
@@ -165,7 +165,7 @@
 
                 </div>
 
-                <div class="modulo">
+                <div class="modulo roxo-escuro">
 
                     <h3>Módulo 09</h3>
 
@@ -187,7 +187,7 @@
         </div>
     </main>
     <footer class="rodape">
-        cod3r & alunos 2019
+        cod3r & alunos <?= date('Y'); ?>
     </footer>
 </body>
 
