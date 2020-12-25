@@ -1,31 +1,52 @@
-*{
+* {
     font-family: 'Oswald', sans-serif;
-    box-sizing: border-box;
+    box-sizing : border-box;
 }
 
-body{
-    height: 100vh;
-    margin: 0px;
-    display: grid;
-    grid-template-rows: 120px 1fr 60px;
+body {
+    height               : 100vh;
+    margin               : 0px;
+    display              : grid;
+    grid-template-rows   : 120px 1fr 60px;
     grid-template-columns: 1fr;
-    grid-template-areas: "cabecalho" "principal" "rodape";
+    grid-template-areas  : "cabecalho""principal""rodape";
 }
 
-.cabecalho{
-    grid-area: cabecalho;
+.cabecalho {
+    grid-area       : cabecalho;
     background-color: #1867c0;
+    color           : #ffffff;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    padding-bottom  : 10px;
+    z-index         : 50;
+    box-shadow      : 0px 4px 9px -2px rgba(0, 0, 0, 0.75);
 }
 
-.principal{
-    grid-area: principal;
-    height: calc(100vh - 180px);/*Ocuparás 100% da altura, menos 120px do header e 60px do footer*/
+.cabecalho>h1 {
+    margin     : 0px;
+    font-size  : 2.8rem;
+    font-weight: 300;
+}
+
+.cabecalho>h2 {
+    margin     : 0px;
+    font-size  : 1.6rem;
+    font-weight: 200;
+}
+
+.principal {
+    grid-area       : principal;
+    height          : calc(100vh - 180px);
+    /*Ocuparás 100% da altura, menos 120px do header e 60px do footer*/
     background-color: #f0f0f0;
 }
 
-.rodape{
-    grid-area: rodape;
+.rodape {
+    grid-area       : rodape;
     background-color: #ffffff;
-    /*position: sticky;
-    bottom: 0px; Caso necessite garantir a visibilidade do footer*/
+    /*position      : sticky;
+    bottom          : 0px; Caso necessite garantir a visibilidade do footer*/
 }
