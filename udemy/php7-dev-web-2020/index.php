@@ -27,7 +27,7 @@
 
                     <ul>
                         <li>
-                            <a href="exercicio.php">Exercício A</a>
+                            <a href="exercicio.php?dir=test&file=teste">Exercício A</a>
                         </li>
                         <li>
                             <a href="#">Exercício B</a>
