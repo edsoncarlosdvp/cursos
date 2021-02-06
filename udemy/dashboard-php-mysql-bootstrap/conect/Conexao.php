@@ -3,7 +3,7 @@
     try {
         $msg = "";
         $host = "localhost";
-        $bancodedados = "demo_cidade";
+        $bancodedados = "dashboard_mod2";
         $usuario = "root";
         $senha = "1234";
 
