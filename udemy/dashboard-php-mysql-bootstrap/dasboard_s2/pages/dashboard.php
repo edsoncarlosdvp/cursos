@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)https://getbootstrap.com.br/docs/4.1/examples/dashboard/ -->
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -35,7 +35,7 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://getbootstrap.com.br/docs/4.1/examples/dashboard/#">
+                            <a class="nav-link active" href="?pagina">
 
                                 Dashboard <span class="sr-only">(atual)</span>
                             </a>
@@ -47,9 +47,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="?pagina=produtos">
+                            <a class="nav-link" href="?pagina=clientes">
 
-                                Produtos
+                                Cadastrar Clientes
                             </a>
                         </li>
                         <li class="nav-item">
@@ -102,10 +102,12 @@
               switch ($_GET['pagina']) {
               case 'pedidos':
                 echo "<h2>Pedidos</h2>";
-                include_once "graficos/graphArea.php";
+                include_once "../../graficos/graphArea.php";
                 break;
 
-              case 'produtos':
+              case 'clientes':
+                echo "<h2>Clientes</h2>";
+                include_once "cadastro_clientes.php";
               break;
 
               case 'vendas':
@@ -114,7 +116,7 @@
               break;
               
               default:
-                echo "NENHUMA OPÇÃO ESCOLHIDA!";
+                include_once "panel.php";
                 break;
             }
           }

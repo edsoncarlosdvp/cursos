@@ -1,5 +1,5 @@
 <?php
-    include_once "./conect/Conexao.php";
+    include_once "../../conect/Conexao.php";
 
     $mes_venda = $_POST["cad_mes"];
     $qtd_venda = $_POST["cad_qtd"];
