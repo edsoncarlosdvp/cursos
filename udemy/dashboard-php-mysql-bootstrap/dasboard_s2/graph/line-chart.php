@@ -85,11 +85,11 @@
         <div class="row mt-3">
             <div class="col-12 col-md-8">
                 <h4>Clientes Cadastrados</h4>
-                <div id="curve_chart"></div>
+                <div id="curve_chart" class="w-auto"></div>
             </div>
             <div class="col-12 col-md-4">
                 <h4>Quantidade de Vendas</h4>
-                <div id="piechart"></div>
+                <div id="piechart" class="w-auto"></div>
             </div>
         </div>
 

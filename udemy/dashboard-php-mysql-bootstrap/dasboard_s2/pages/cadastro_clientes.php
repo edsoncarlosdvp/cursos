@@ -41,22 +41,6 @@
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
             </div>
         </form>
-        <?php
-            include_once "../../conect/Conexao.php";
-
-                    $stmt = $pdo->prepare("SELECT * FROM clientes");
-                    
-                    $stmt->execute();
-                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-                    foreach ($result as $row) {
-                        $mes = $row["mes_clientes"];
-                        $qtd = $row["qtd_clientes"];
-                        echo "Mês: ".$mes."<br>"." Quantidade: ".$qtd."<br>";
-                    }
-                    
-                        // echo "Mês: ".$mes." Quantidade: ".$qtd;
-                    ?>
     </div>
 </body>
 

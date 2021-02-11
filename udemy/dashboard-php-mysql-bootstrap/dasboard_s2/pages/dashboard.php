@@ -18,10 +18,8 @@
     </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0"
-            href="https://getbootstrap.com.br/docs/4.1/examples/dashboard/#">ENI
-            Dashboard</a>
+    <nav class="navbar navbar-expand-lg d-none d-sm-block navbar-dark bg-dark p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">ENI Dashboard</a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
                 <a class="nav-link" href="https://getbootstrap.com.br/docs/4.1/examples/dashboard/#">Sair</a>
@@ -29,9 +27,30 @@
         </ul>
     </nav>
 
+    <!-- <div class="container bg-danger" style="margin-top: -50px">
+        <div class="collapse navbar-collapse" id="menu_dashboard">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="text-decoration: none;color: #fff">
+                        ENI Dashboard
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Outra ação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div> -->
+
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar" id="menu_dashboard">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -125,6 +144,45 @@
             </main>
         </div>
     </div>
+
+    <div class="d-block d-md-none">
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">ENI Dashboar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_dashboard_bottom"
+                aria-controls="menu_dashboard_bottom" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu_dashboard_bottom">
+                <ul class="navbar-nav mr-auto">
+                    <a class="nav-link active" href="?pagina">
+
+                        Dashboard <span class="sr-only">(atual)</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?pagina=pedidos" style="text-decoration: none">
+
+                            Pedidos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?pagina=clientes">
+
+                            Cadastrar Clientes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?pagina=vendas">
+
+                            Cadastrar Vendas
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
 
     <!-- Principal JavaScript do Bootstrap
     ================================================== -->
