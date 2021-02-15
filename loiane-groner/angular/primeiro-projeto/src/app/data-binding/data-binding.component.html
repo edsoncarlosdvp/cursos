@@ -1,0 +1,19 @@
+<section class="property-binding">
+  <article>
+    <h3>Interpolation/Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }} </p>
+    <p>Eu curto o curso de Angular? {{ cursoAngular && getCurtiCurso() ? 'Sim' : 'Não' }} </p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImage }}" width="auto" height="350"
+      alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
+    <img [src]="urlImage" width="auto" height="350"
+      alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
+    <img bind-src="urlImage" width="auto" height="350"
+      alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
+  </article>
+</section>
