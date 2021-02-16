@@ -15,8 +15,8 @@
       alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
     <img bind-src="urlImage" width="auto" height="350"
       alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
-  </article> -->
-  <article>
+  </article>
+   <article>
     <h3>Class e Style Binding</h3>
     <div>
       Selecione uma classe:
@@ -28,12 +28,12 @@
       </select>
       <br><br>
 
-      <!-- Property Binding com Interpolação -->
+      Property Binding com Interpolação
       <div class="{{ classe.value }} mb-3 p-3" role="alert">
         Div fica com a cor selecionada no combobox
       </div>
 
-      <!-- Property Binding com Classe -->
+      Property Binding com Classe
       <div class="alert" [class.alert-success]=" classe.value == 'alert-success'" role=" alert">
         Sucesso
       </div>
@@ -43,14 +43,38 @@
       <div class="alert" [class.alert-warning]=" classe.value == 'alert-warning'" role="alert">
         Alerta
       </div>
-      <!-- <div class="alert" [class.alert-danger]=" classe.value == 'alert-danger'" role="alert">
+      <div class="alert" [class.alert-danger]=" classe.value == 'alert-danger'" role="alert">
         Erro
-      </div> -->
-      <!-- Property Binding com Style -->
+      </div>
+       Property Binding com Style
       <div class="alert alert-danger" [style.display]=" classe.value == 'alert-danger' ? 'block' : 'none'" role="alert">
         Erro
       </div>
 
     </div>
-  </article>
+  </article> -->
+  <section>
+    <article>
+      <h3>Event Binding</h3>
+      <div>
+        <button class="btn btn-primary" (click)="botaoClicado()">Clique em mim</button>
+        <br><br>
+        <input type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput/>
+        <p>Valor do campo: {{ valorAtual }} </p>
+        <p>Valor do salvo: {{ valorSalvo }} </p>
+      </div>
+
+      <br><br>
+
+      <span
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.highlight]="isMouseOver"
+        >Passe o mouse aqui!</span>
+    </article>
+  </section>
 </section>
