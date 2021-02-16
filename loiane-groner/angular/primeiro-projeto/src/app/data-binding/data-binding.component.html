@@ -1,5 +1,5 @@
 <section class="property-binding">
-  <article>
+  <!-- <article>
     <h3>Interpolation/Interpolação</h3>
     <p>String renderizada com interpolação: {{ url }}</p>
     <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
@@ -15,5 +15,42 @@
       alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
     <img bind-src="urlImage" width="auto" height="350"
       alt="Paisagens do Lago Esmeralda localizado no Parque Nacional Yoho, Colúmbia Britânica, Canadá."><br>
+  </article> -->
+  <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+
+      <!-- Property Binding com Interpolação -->
+      <div class="{{ classe.value }} mb-3 p-3" role="alert">
+        Div fica com a cor selecionada no combobox
+      </div>
+
+      <!-- Property Binding com Classe -->
+      <div class="alert" [class.alert-success]=" classe.value == 'alert-success'" role=" alert">
+        Sucesso
+      </div>
+      <div class="alert" [class.alert-info]=" classe.value == 'alert-info'" role="alert">
+        Info
+      </div>
+      <div class="alert" [class.alert-warning]=" classe.value == 'alert-warning'" role="alert">
+        Alerta
+      </div>
+      <!-- <div class="alert" [class.alert-danger]=" classe.value == 'alert-danger'" role="alert">
+        Erro
+      </div> -->
+      <!-- Property Binding com Style -->
+      <div class="alert alert-danger" [style.display]=" classe.value == 'alert-danger' ? 'block' : 'none'" role="alert">
+        Erro
+      </div>
+
+    </div>
   </article>
 </section>
