@@ -42,5 +42,4 @@ export class DataBindingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
