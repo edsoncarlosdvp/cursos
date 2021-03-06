@@ -5,7 +5,8 @@ const pessoa = {
     idade: 35,
     endereco: {
         logadouro: 'Rua ABC',
-        numero: 1000
+        numero: 1000,
+        cep: 2600000
     }
 }
 
