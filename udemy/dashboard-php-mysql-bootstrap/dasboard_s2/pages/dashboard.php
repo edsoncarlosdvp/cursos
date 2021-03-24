@@ -15,66 +15,66 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg d-none d-sm-block navbar-dark bg-dark p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">ENI Dashboard</a>
-        <ul class="navbar-nav px-3">
-            <li class="nav-item text-nowrap">
-                <a class="nav-link" href="https://getbootstrap.com.br/docs/4.1/examples/dashboard/#">Sair</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg d-none d-sm-flex navbar-dark bg-dark p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><img src="../images/iconbar.png" width="70" height="40"
+                alt=""> Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuTop"
+            aria-controls="menuTop" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- <div class="container bg-danger" style="margin-top: -50px">
-        <div class="collapse navbar-collapse" id="menu_dashboard">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        style="text-decoration: none;color: #fff">
-                        ENI Dashboard
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        data-target="#menuTop" aria-haspopup="true" aria-expanded="false">
+                        Menu
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu dropdown-menu-right" id="menuTop" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Ação</a>
                         <a class="dropdown-item" href="#">Outra ação</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Algo mais aqui</a>
                     </div>
                 </li>
-
             </ul>
         </div>
-    </div> -->
+    </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar" id="menu_dashboard">
+            <nav class="col-md-2 d-none d-md-block bg-white sidebar" id="menu_dashboard">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="?pagina">
 
-                                Dashboard <span class="sr-only">(atual)</span>
+                                <i class="fas fa-tachometer-alt text-black-50"></i> Dashboard <span
+                                    class="sr-only">(atual)</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="?pagina=pedidos">
 
-                                Pedidos
+                                <i class="fa fa-box"></i> Pedidos
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="?pagina=clientes">
 
-                                Cadastrar Clientes
+                                <i class="fa fa-user"></i> Cadastrar Clientes
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="?pagina=vendas">
 
-                                Cadastrar Vendas
+                                <i class="fa fa-dollar-sign"></i> Cadastrar Vendas
                             </a>
                         </li>
                         <!-- <li class="nav-item">
@@ -93,7 +93,7 @@
                 </div>
             </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 vh-100 px-4">
                 <div class="chartjs-size-monitor"
                     style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
                     <div class="chartjs-size-monitor-expand"

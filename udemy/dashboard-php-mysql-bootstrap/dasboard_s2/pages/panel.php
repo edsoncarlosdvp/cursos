@@ -19,9 +19,9 @@
     <div class="container-fluid">
         <div class="row text-white">
             <div class="col-md-4">
-                <div class="card bg-dark text-center">
+                <div class="card bg-dark text-center shadow">
                     <h2>Total de Clientes / Ano</h2>
-                    <div class="card-body">
+                    <div class="card-body shadow">
                         <h4 class="card-title text-white text-center">
                             <?php
                                 $stmt = $pdo->query("SELECT SUM(qtd_clientes) AS total FROM clientes")->fetchColumn();
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card bg-dark text-center">
+                <div class="card bg-dark text-center shadow">
                     <h2>Faturamento Anual</h2>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -47,9 +47,9 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card bg-dark text-center">
+                <div class="card bg-dark text-center shadow">
                     <h2>Total de Vendas (Anual)</h2>
-                    <div class="card-body">
+                    <div class="card-body shadow">
                         <h4 class="card-title">
                             <?php
                                 $stmt = $pdo->query("SELECT SUM(qtd_venda) AS total_vendas FROM venda")->fetchColumn();

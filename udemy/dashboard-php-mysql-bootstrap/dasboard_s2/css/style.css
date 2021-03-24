@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+}
+
+li>a {
+    color: inherit;
+}
+
+main {
+    background-color: #f8f8f8;
+}
