@@ -1,14 +1,12 @@
 function greet(name: string) {
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name || 'Anonymous'}!`);
 }
  
-greet('Katz'); // Prints: Hello, Katz  
- 
-greet(1337); // Error: argument '1337' is not assignable to parameter of type 'string'
+greet('Anders'); // Prints: Hello, Anders!
+greet(); // TypeScript Error: Expected 1 arguments, but got 0.
 
-function printKeyValue(key: string, value) {
-  console.log(`${key}: ${value}`);
+function greet(name?: string) {
+  console.log(`Hello, ${name|| 'Anonymous'}!`);
 }
  
-printKeyValue('Courage', 1337); // Prints: Courage: 1337
-printKeyValue('Mood', 'scared'); // Prints: Mood: scared
+greet(); // Prints: Hello, Anonymous!
